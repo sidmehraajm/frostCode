@@ -6,8 +6,8 @@ def getVec(arg):
     return v
     
 
-polPos = polePos(ArmPos = 'a',ElbowPos = 'e',WristPos ='w',PoleFactor=4)
-a.translate.set(polPos)
+#polPos = polePos(ArmPos = 'a',ElbowPos = 'e',WristPos ='w',PoleFactor=4)
+#a.translate.set(polPos)
 
 def polePos(ArmPos,ElbowPos,WristPos,PoleFactor = 5) :  
     armPos = getVec(ArmPos)
