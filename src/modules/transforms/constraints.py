@@ -1,6 +1,4 @@
 #ParentConstraint from bfr 
-import pymel.core as pm
-import maya.cmds as cmds
 def bf_parent_con(src = None,tgt=[],dcm=True,opm=False):
     """
     Bifrost Constraint 
@@ -9,7 +7,7 @@ def bf_parent_con(src = None,tgt=[],dcm=True,opm=False):
         tgt:Target objects : list of transforms/ singe transform
         dcm: decompose the Output connection: bool
         opm: uses offest parent matrix of the children for the Output connection: bool
-        
+
     Returns:
         None
 
@@ -79,5 +77,3 @@ def bf_parent_con(src = None,tgt=[],dcm=True,opm=False):
         #converting bfr node to dg
         brf_board = pm.bifrostGraph(bf_node,tbd =True)
         pm.rename(brf_board,parent_con_name)
-
-        
