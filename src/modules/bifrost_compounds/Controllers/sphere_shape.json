@@ -1,0 +1,1569 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "dependencies": [
+        {
+            "uri": "file:///Math_types.json"
+        },
+        {
+            "uri": "file:///bifrost_object_i.json"
+        },
+        {
+            "uri": "file:///bifrost_geometry_query_types.json"
+        },
+        {
+            "uri": "file:///geometry_types.json"
+        },
+        {
+            "uri": "file:///create_object_from_schema.json"
+        },
+        {
+            "uri": "file:///Math_conversion.json"
+        },
+        {
+            "uri": "file:///Math_float.json"
+        },
+        {
+            "uri": "file:///Math_double.json"
+        },
+        {
+            "uri": "file:///Math_ulong.json"
+        },
+        {
+            "uri": "file:///Math_char.json"
+        },
+        {
+            "uri": "file:///Math_int.json"
+        },
+        {
+            "uri": "file:///Math_long.json"
+        },
+        {
+            "uri": "file:///Math_short.json"
+        },
+        {
+            "uri": "file:///Math_uchar.json"
+        },
+        {
+            "uri": "file:///Math_uint.json"
+        },
+        {
+            "uri": "file:///Math_ushort.json"
+        },
+        {
+            "uri": "file:///set_property_any.json"
+        },
+        {
+            "uri": "file:///set_property.json"
+        },
+        {
+            "uri": "file:///get_property_any.json"
+        },
+        {
+            "uri": "file:///get_property.json"
+        },
+        {
+            "uri": "file:///set_sub_object_property.json"
+        },
+        {
+            "uri": "file:///validate_strands.json"
+        },
+        {
+            "uri": "file:///construct_strands.json"
+        },
+        {
+            "uri": "file:///riv_types.json"
+        },
+        {
+            "uri": "file:///point_types.json"
+        },
+        {
+            "uri": "file:///FCurve.json"
+        },
+        {
+            "uri": "file:///riv_ops.json"
+        },
+        {
+            "uri": "file:///has_property.json"
+        },
+        {
+            "uri": "file:///get_property_keys.json"
+        },
+        {
+            "uri": "file:///is_empty.json"
+        },
+        {
+            "uri": "file:///materials.json"
+        },
+        {
+            "uri": "file:///set_strands_shape.json"
+        },
+        {
+            "uri": "file:///jotun_rand.json"
+        },
+        {
+            "uri": "file:///increment_decrement.json"
+        },
+        {
+            "uri": "file:///random_value.json"
+        },
+        {
+            "uri": "file:///create_volume_geo_prop.json"
+        },
+        {
+            "uri": "file:///is_a.json"
+        },
+        {
+            "uri": "file:///is_a_mesh.json"
+        },
+        {
+            "uri": "file:///is_a_strands.json"
+        },
+        {
+            "uri": "file:///is_a_points.json"
+        },
+        {
+            "uri": "file:///is_a_volume.json"
+        },
+        {
+            "uri": "file:///get_geo_schema_type.json"
+        },
+        {
+            "uri": "file:///switch_is_a.json"
+        },
+        {
+            "uri": "file:///get_target_component.json"
+        },
+        {
+            "uri": "file:///create_data_geo_prop.json"
+        },
+        {
+            "uri": "file:///get_geo_component_count.json"
+        },
+        {
+            "uri": "file:///set_geo_property.array.json"
+        },
+        {
+            "uri": "file:///set_geo_property.scalar.json"
+        },
+        {
+            "uri": "file:///Math_array.json"
+        },
+        {
+            "uri": "file:///access_offset_array.json"
+        },
+        {
+            "uri": "file:///CoreArrayOps.json"
+        },
+        {
+            "uri": "file:///get_geo_property.json"
+        },
+        {
+            "uri": "file:///get_strands_structure.json"
+        },
+        {
+            "uri": "file:///update_point_strand_index.json"
+        },
+        {
+            "uri": "file:///set_strand_color.json"
+        },
+        {
+            "uri": "file:///Core_Array_array_is_empty.json"
+        },
+        {
+            "uri": "file:///Math_multiply_quaternions.json"
+        },
+        {
+            "uri": "file:///Math_rotate_by_quaternion.json"
+        },
+        {
+            "uri": "file:///CoreStringOps.json"
+        },
+        {
+            "uri": "file:///Math_bool.json"
+        },
+        {
+            "uri": "file:///get_indexed_geo_property_check.json"
+        },
+        {
+            "uri": "file:///get_mesh_structure.json"
+        },
+        {
+            "uri": "file:///Core_Constants_default_value.json"
+        },
+        {
+            "uri": "file:///int_filter.json"
+        },
+        {
+            "uri": "file:///get_array_indices.json"
+        },
+        {
+            "uri": "file:///Math_matrix_to_quaternion.json"
+        },
+        {
+            "uri": "file:///erase_property.json"
+        },
+        {
+            "uri": "file:///Math_quaternion_to_matrix.json"
+        },
+        {
+            "uri": "file:///Math_compose_transform_matrix.json"
+        },
+        {
+            "uri": "file:///get_sub_object.json"
+        },
+        {
+            "uri": "file:///get_geo_property_or_default.json"
+        },
+        {
+            "uri": "file:///Math_quaternion_invert.json"
+        },
+        {
+            "uri": "file:///points_to_transforms.json"
+        },
+        {
+            "uri": "file:///get_geo_target_count.json"
+        },
+        {
+            "uri": "file:///get_geo_property_check.json"
+        },
+        {
+            "uri": "file:///volume_types.json"
+        },
+        {
+            "uri": "file:///volume_nodedefs.json"
+        },
+        {
+            "uri": "file:///interpret_auto_port_as_scalar.json"
+        },
+        {
+            "uri": "file:///Math_lerp_with_clamp.json"
+        },
+        {
+            "uri": "file:///Math_nlerp.json"
+        },
+        {
+            "uri": "file:///Math_quaternion_slerp.json"
+        },
+        {
+            "uri": "file:///transform_points.json"
+        }
+    ],
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "User::Compounds::sphere_shape",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "offset"
+                                                },
+                                                {
+                                                    "metaName": "colormin"
+                                                },
+                                                {
+                                                    "metaName": "colormax"
+                                                },
+                                                {
+                                                    "metaName": "shape"
+                                                },
+                                                {
+                                                    "metaName": "default_size"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-390.919 1297.98"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "out_geometry"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1230 999"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-868.236 85.3572 1350.36 821.785"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "410.801 -38.2509"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "out_geometry",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "offset",
+                    "portDirection": "input",
+                    "portType": "Math::float4x4",
+                    "portDefault": {
+                        "c0": {
+                            "x": "1f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c1": {
+                            "x": "0f",
+                            "y": "1f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c2": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "1f",
+                            "w": "0f"
+                        },
+                        "c3": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "1f"
+                        }
+                    }
+                },
+                {
+                    "portName": "colormin",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "0f",
+                        "y": "10f",
+                        "z": "1f"
+                    }
+                },
+                {
+                    "portName": "colormax",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "1f",
+                        "y": "1f",
+                        "z": "1f"
+                    }
+                },
+                {
+                    "portName": "shape",
+                    "portDirection": "input",
+                    "portType": "Geometry::StrandShapes",
+                    "portDefault": "Ribbon"
+                },
+                {
+                    "portName": "default_size",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "0.00999999978f"
+                }
+            ],
+            "compounds": [
+                {
+                    "name": "sphere_shape_com",
+                    "metadata": [
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-159 132"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "_0"
+                                                        },
+                                                        {
+                                                            "metaName": "_1"
+                                                        },
+                                                        {
+                                                            "metaName": "_2"
+                                                        },
+                                                        {
+                                                            "metaName": "_3"
+                                                        },
+                                                        {
+                                                            "metaName": "_4"
+                                                        },
+                                                        {
+                                                            "metaName": "_5"
+                                                        },
+                                                        {
+                                                            "metaName": "_6"
+                                                        },
+                                                        {
+                                                            "metaName": "_7"
+                                                        },
+                                                        {
+                                                            "metaName": "_8"
+                                                        },
+                                                        {
+                                                            "metaName": "_9"
+                                                        },
+                                                        {
+                                                            "metaName": "_10"
+                                                        },
+                                                        {
+                                                            "metaName": "_11"
+                                                        },
+                                                        {
+                                                            "metaName": "_12"
+                                                        },
+                                                        {
+                                                            "metaName": "_13"
+                                                        },
+                                                        {
+                                                            "metaName": "_14"
+                                                        },
+                                                        {
+                                                            "metaName": "_15"
+                                                        },
+                                                        {
+                                                            "metaName": "_16"
+                                                        },
+                                                        {
+                                                            "metaName": "_17"
+                                                        },
+                                                        {
+                                                            "metaName": "_18"
+                                                        },
+                                                        {
+                                                            "metaName": "_19"
+                                                        },
+                                                        {
+                                                            "metaName": "_20"
+                                                        },
+                                                        {
+                                                            "metaName": "_21"
+                                                        },
+                                                        {
+                                                            "metaName": "_22"
+                                                        },
+                                                        {
+                                                            "metaName": "_23"
+                                                        },
+                                                        {
+                                                            "metaName": "_24"
+                                                        },
+                                                        {
+                                                            "metaName": "_25"
+                                                        },
+                                                        {
+                                                            "metaName": "_26"
+                                                        },
+                                                        {
+                                                            "metaName": "_27"
+                                                        },
+                                                        {
+                                                            "metaName": "_28"
+                                                        },
+                                                        {
+                                                            "metaName": "_29"
+                                                        },
+                                                        {
+                                                            "metaName": "_30"
+                                                        },
+                                                        {
+                                                            "metaName": "_31"
+                                                        },
+                                                        {
+                                                            "metaName": "_32"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "strands"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "_0",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_1",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_2",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_3",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_4",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_5",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_6",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_7",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_8",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_9",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_10",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_11",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_12",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_13",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_14",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_15",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_16",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_17",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_18",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_19",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_20",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_21",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_22",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_23",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_24",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_25",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_26",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_27",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_28",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_29",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_30",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_31",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_32",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "strands",
+                            "portDirection": "output"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "construct_strands",
+                            "nodeType": "Geometry::Strands::construct_strands",
+                            "fanInPortNames": {
+                                "point_position": [
+                                    "_0",
+                                    "_1",
+                                    "_2",
+                                    "_3",
+                                    "_4",
+                                    "_5",
+                                    "_6",
+                                    "_7",
+                                    "_8",
+                                    "_9",
+                                    "_10",
+                                    "_11",
+                                    "_12",
+                                    "_13",
+                                    "_14",
+                                    "_15",
+                                    "_16",
+                                    "_17",
+                                    "_18",
+                                    "_19",
+                                    "_20",
+                                    "_21",
+                                    "_22",
+                                    "_23",
+                                    "_24",
+                                    "_25",
+                                    "_26",
+                                    "_27",
+                                    "_28",
+                                    "_29",
+                                    "_30",
+                                    "_31",
+                                    "_32"
+                                ]
+                            },
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "211 132"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": "construct_strands.strands",
+                            "target": ".strands"
+                        },
+                        {
+                            "source": "._0",
+                            "target": "construct_strands.point_position._0"
+                        },
+                        {
+                            "source": "._1",
+                            "target": "construct_strands.point_position._1"
+                        },
+                        {
+                            "source": "._2",
+                            "target": "construct_strands.point_position._2"
+                        },
+                        {
+                            "source": "._3",
+                            "target": "construct_strands.point_position._3"
+                        },
+                        {
+                            "source": "._4",
+                            "target": "construct_strands.point_position._4"
+                        },
+                        {
+                            "source": "._5",
+                            "target": "construct_strands.point_position._5"
+                        },
+                        {
+                            "source": "._6",
+                            "target": "construct_strands.point_position._6"
+                        },
+                        {
+                            "source": "._7",
+                            "target": "construct_strands.point_position._7"
+                        },
+                        {
+                            "source": "._8",
+                            "target": "construct_strands.point_position._8"
+                        },
+                        {
+                            "source": "._9",
+                            "target": "construct_strands.point_position._9"
+                        },
+                        {
+                            "source": "._10",
+                            "target": "construct_strands.point_position._10"
+                        },
+                        {
+                            "source": "._11",
+                            "target": "construct_strands.point_position._11"
+                        },
+                        {
+                            "source": "._12",
+                            "target": "construct_strands.point_position._12"
+                        },
+                        {
+                            "source": "._13",
+                            "target": "construct_strands.point_position._13"
+                        },
+                        {
+                            "source": "._14",
+                            "target": "construct_strands.point_position._14"
+                        },
+                        {
+                            "source": "._15",
+                            "target": "construct_strands.point_position._15"
+                        },
+                        {
+                            "source": "._16",
+                            "target": "construct_strands.point_position._16"
+                        },
+                        {
+                            "source": "._17",
+                            "target": "construct_strands.point_position._17"
+                        },
+                        {
+                            "source": "._18",
+                            "target": "construct_strands.point_position._18"
+                        },
+                        {
+                            "source": "._19",
+                            "target": "construct_strands.point_position._19"
+                        },
+                        {
+                            "source": "._20",
+                            "target": "construct_strands.point_position._20"
+                        },
+                        {
+                            "source": "._21",
+                            "target": "construct_strands.point_position._21"
+                        },
+                        {
+                            "source": "._22",
+                            "target": "construct_strands.point_position._22"
+                        },
+                        {
+                            "source": "._23",
+                            "target": "construct_strands.point_position._23"
+                        },
+                        {
+                            "source": "._24",
+                            "target": "construct_strands.point_position._24"
+                        },
+                        {
+                            "source": "._25",
+                            "target": "construct_strands.point_position._25"
+                        },
+                        {
+                            "source": "._26",
+                            "target": "construct_strands.point_position._26"
+                        },
+                        {
+                            "source": "._27",
+                            "target": "construct_strands.point_position._27"
+                        },
+                        {
+                            "source": "._28",
+                            "target": "construct_strands.point_position._28"
+                        },
+                        {
+                            "source": "._29",
+                            "target": "construct_strands.point_position._29"
+                        },
+                        {
+                            "source": "._30",
+                            "target": "construct_strands.point_position._30"
+                        },
+                        {
+                            "source": "._31",
+                            "target": "construct_strands.point_position._31"
+                        },
+                        {
+                            "source": "._32",
+                            "target": "construct_strands.point_position._32"
+                        }
+                    ],
+                    "values": [],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "sphere_shape_com",
+                    "nodeType": "sphere_shape_com",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "315 10"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "add",
+                    "nodeType": "Core::Math::add",
+                    "multiInPortNames": [
+                        "output1",
+                        "transform"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "315 1021"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_strand_color",
+                    "nodeType": "User::Compounds::set_strand_color",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "925 1036"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "transform_points",
+                    "nodeType": "Modeling::Points::transform_points",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "620 763"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value",
+                    "valueType": "Math::float4x4",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "10 1045"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "value.output",
+                    "target": "add.first.output1"
+                },
+                {
+                    "source": "add.output",
+                    "target": "transform_points.transform"
+                },
+                {
+                    "source": "transform_points.out_points",
+                    "target": "set_strand_color.strands"
+                },
+                {
+                    "source": "sphere_shape_com.strands",
+                    "target": "transform_points.points"
+                },
+                {
+                    "source": "set_strand_color.out_geometry",
+                    "target": ".out_geometry"
+                },
+                {
+                    "source": ".offset",
+                    "target": "add.first.transform"
+                },
+                {
+                    "source": ".colormin",
+                    "target": "set_strand_color.colormin"
+                },
+                {
+                    "source": ".colormax",
+                    "target": "set_strand_color.colormax"
+                },
+                {
+                    "source": ".shape",
+                    "target": "set_strand_color.shape"
+                },
+                {
+                    "source": ".default_size",
+                    "target": "set_strand_color.default_size"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "sphere_shape_com._0",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "1f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._1",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0.5f",
+                        "z": "0.866024971f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._2",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0.866024971f",
+                        "z": "0.5f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._3",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "1f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._4",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0.866024971f",
+                        "z": "-0.5f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._5",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0.5f",
+                        "z": "-0.866024971f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._6",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "-1f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._7",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "-0.5f",
+                        "z": "-0.866024971f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._8",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "-0.866024971f",
+                        "z": "-0.5f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._9",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "-1f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._10",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "-0.866024971f",
+                        "z": "0.5f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._11",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "-0.5f",
+                        "z": "0.866024971f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._12",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "1f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._13",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0.707107008f",
+                        "y": "0f",
+                        "z": "0.707107008f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._14",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "1f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._15",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0.707107008f",
+                        "y": "0f",
+                        "z": "-0.707107008f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._16",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "-1f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._17",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-0.707107008f",
+                        "y": "0f",
+                        "z": "-0.707107008f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._18",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-1f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._19",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-0.866024971f",
+                        "y": "0.5f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._20",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-0.5f",
+                        "y": "0.866024971f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._21",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "1f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._22",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0.5f",
+                        "y": "0.866024971f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._23",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0.866024971f",
+                        "y": "0.5f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._24",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "1f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._25",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0.866024971f",
+                        "y": "-0.5f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._26",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0.5f",
+                        "y": "-0.866024971f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._27",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "-1f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._28",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-0.5f",
+                        "y": "-0.866024971f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._29",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-0.866024971f",
+                        "y": "-0.5f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._30",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-1f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._31",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-0.707107008f",
+                        "y": "0f",
+                        "z": "0.707107008f"
+                    }
+                },
+                {
+                    "valueName": "sphere_shape_com._32",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "1f"
+                    }
+                },
+                {
+                    "valueName": "set_strand_color.strands",
+                    "valueType": "Amino::Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "set_strand_color.colormin",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "10f",
+                        "z": "1f"
+                    }
+                },
+                {
+                    "valueName": "set_strand_color.colormax",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "1f",
+                        "y": "1f",
+                        "z": "1f"
+                    }
+                },
+                {
+                    "valueName": "set_strand_color.shape",
+                    "valueType": "Geometry::StrandShapes",
+                    "value": "Ribbon"
+                },
+                {
+                    "valueName": "set_strand_color.default_size",
+                    "valueType": "float",
+                    "value": "0.00999999978f"
+                },
+                {
+                    "valueName": "transform_points.points",
+                    "valueType": "Amino::Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "transform_points.transform",
+                    "valueType": "Math::float4x4",
+                    "value": {
+                        "c0": {
+                            "x": "1f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c1": {
+                            "x": "0f",
+                            "y": "1f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c2": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "1f",
+                            "w": "0f"
+                        },
+                        "c3": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "1f"
+                        }
+                    }
+                },
+                {
+                    "valueName": "transform_points.local_point_space",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "value.value",
+                    "valueType": "Math::float4x4",
+                    "value": {
+                        "c0": {
+                            "x": "1f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c1": {
+                            "x": "0f",
+                            "y": "1f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c2": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "1f",
+                            "w": "0f"
+                        },
+                        "c3": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "1f"
+                        }
+                    }
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}
