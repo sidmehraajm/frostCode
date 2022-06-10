@@ -1,6 +1,6 @@
 #Global_ctrl_setup
-from ..transforms import transform as trf
-transform = trf.tf_class()
+from ..transforms import transform
+transform = transform.tf_class()
 class globals(object):
     
     def global_Hi(self,assetName):
@@ -21,10 +21,10 @@ class globals(object):
         """
         #crerating main global groups
         rig_global_grp = transform.create_transform(Trname='rig_global',Data = assetName)
-        rig_guide_grp = transform.create_transform(Trname='guides',parent=rig_global_grp,Data = assetName)
-        rig_controls_grp = transform.create_transform(Trname='controls',parent=rig_global_grp,Data = assetName)
-        rig_skeleton_grp = transform.create_transform(Trname='skeleton',parent=rig_global_grp,Data = assetName)
-        rig_misc_grp = transform.create_transform(Trname='misc',parent=rig_global_grp,Data = assetName)
+        rig_guide_grp = transform.create_transform(Trname='guides',parent=rig_global_grp,Data = assetName+'_guides')
+        rig_controls_grp = transform.create_transform(Trname='controls',parent=rig_global_grp,Data = assetName+'_controls')
+        rig_skeleton_grp = transform.create_transform(Trname='skeleton',parent=rig_global_grp,Data = assetName+'_skeleton')
+        rig_misc_grp = transform.create_transform(Trname='misc',parent=rig_global_grp,Data = assetName+'_misc')
 
         #creating global guides
         

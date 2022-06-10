@@ -8,4 +8,15 @@ print('Imported cmds')
 import pymel.core as pm
 print('Imported PyMel')
 
+from ..transforms import constraints
+print('Imported constraints')
+
+from ..transforms import controllers
+print('Imported Controllers')
+
+from ..transforms import transform
+print('Imported transform')
+
+from src.modules.frostRig import Rig_Global
+print('Imported Rig_Global')
 
