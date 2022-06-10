@@ -1,0 +1,2096 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "dependencies": [
+        {
+            "uri": "file:///Math_types.json"
+        },
+        {
+            "uri": "file:///bifrost_object_i.json"
+        },
+        {
+            "uri": "file:///bifrost_geometry_query_types.json"
+        },
+        {
+            "uri": "file:///geometry_types.json"
+        },
+        {
+            "uri": "file:///create_object_from_schema.json"
+        },
+        {
+            "uri": "file:///Math_conversion.json"
+        },
+        {
+            "uri": "file:///Math_float.json"
+        },
+        {
+            "uri": "file:///Math_double.json"
+        },
+        {
+            "uri": "file:///Math_ulong.json"
+        },
+        {
+            "uri": "file:///Math_char.json"
+        },
+        {
+            "uri": "file:///Math_int.json"
+        },
+        {
+            "uri": "file:///Math_long.json"
+        },
+        {
+            "uri": "file:///Math_short.json"
+        },
+        {
+            "uri": "file:///Math_uchar.json"
+        },
+        {
+            "uri": "file:///Math_uint.json"
+        },
+        {
+            "uri": "file:///Math_ushort.json"
+        },
+        {
+            "uri": "file:///set_property_any.json"
+        },
+        {
+            "uri": "file:///set_property.json"
+        },
+        {
+            "uri": "file:///get_property_any.json"
+        },
+        {
+            "uri": "file:///get_property.json"
+        },
+        {
+            "uri": "file:///set_sub_object_property.json"
+        },
+        {
+            "uri": "file:///validate_strands.json"
+        },
+        {
+            "uri": "file:///construct_strands.json"
+        },
+        {
+            "uri": "file:///Core_Array_array_is_empty.json"
+        },
+        {
+            "uri": "file:///CoreArrayOps.json"
+        },
+        {
+            "uri": "file:///get_geo_property.json"
+        },
+        {
+            "uri": "file:///riv_types.json"
+        },
+        {
+            "uri": "file:///point_types.json"
+        },
+        {
+            "uri": "file:///FCurve.json"
+        },
+        {
+            "uri": "file:///riv_ops.json"
+        },
+        {
+            "uri": "file:///has_property.json"
+        },
+        {
+            "uri": "file:///create_volume_geo_prop.json"
+        },
+        {
+            "uri": "file:///is_a.json"
+        },
+        {
+            "uri": "file:///is_a_mesh.json"
+        },
+        {
+            "uri": "file:///is_a_strands.json"
+        },
+        {
+            "uri": "file:///is_a_points.json"
+        },
+        {
+            "uri": "file:///is_a_volume.json"
+        },
+        {
+            "uri": "file:///get_geo_schema_type.json"
+        },
+        {
+            "uri": "file:///switch_is_a.json"
+        },
+        {
+            "uri": "file:///get_target_component.json"
+        },
+        {
+            "uri": "file:///create_data_geo_prop.json"
+        },
+        {
+            "uri": "file:///get_geo_component_count.json"
+        },
+        {
+            "uri": "file:///set_geo_property.array.json"
+        },
+        {
+            "uri": "file:///set_geo_property.scalar.json"
+        },
+        {
+            "uri": "file:///Math_multiply_quaternions.json"
+        },
+        {
+            "uri": "file:///Math_rotate_by_quaternion.json"
+        },
+        {
+            "uri": "file:///CoreStringOps.json"
+        },
+        {
+            "uri": "file:///Math_bool.json"
+        },
+        {
+            "uri": "file:///get_indexed_geo_property_check.json"
+        },
+        {
+            "uri": "file:///get_mesh_structure.json"
+        },
+        {
+            "uri": "file:///Math_array.json"
+        },
+        {
+            "uri": "file:///Core_Constants_default_value.json"
+        },
+        {
+            "uri": "file:///int_filter.json"
+        },
+        {
+            "uri": "file:///get_array_indices.json"
+        },
+        {
+            "uri": "file:///Math_matrix_to_quaternion.json"
+        },
+        {
+            "uri": "file:///erase_property.json"
+        },
+        {
+            "uri": "file:///Math_quaternion_to_matrix.json"
+        },
+        {
+            "uri": "file:///Math_compose_transform_matrix.json"
+        },
+        {
+            "uri": "file:///get_sub_object.json"
+        },
+        {
+            "uri": "file:///get_geo_property_or_default.json"
+        },
+        {
+            "uri": "file:///Math_quaternion_invert.json"
+        },
+        {
+            "uri": "file:///points_to_transforms.json"
+        },
+        {
+            "uri": "file:///get_geo_target_count.json"
+        },
+        {
+            "uri": "file:///get_geo_property_check.json"
+        },
+        {
+            "uri": "file:///volume_types.json"
+        },
+        {
+            "uri": "file:///volume_nodedefs.json"
+        },
+        {
+            "uri": "file:///interpret_auto_port_as_scalar.json"
+        },
+        {
+            "uri": "file:///Math_lerp_with_clamp.json"
+        },
+        {
+            "uri": "file:///Math_nlerp.json"
+        },
+        {
+            "uri": "file:///Math_quaternion_slerp.json"
+        },
+        {
+            "uri": "file:///transform_points.json"
+        },
+        {
+            "uri": "file:///get_property_keys.json"
+        },
+        {
+            "uri": "file:///is_empty.json"
+        },
+        {
+            "uri": "file:///materials.json"
+        },
+        {
+            "uri": "file:///set_strands_shape.json"
+        },
+        {
+            "uri": "file:///jotun_rand.json"
+        },
+        {
+            "uri": "file:///increment_decrement.json"
+        },
+        {
+            "uri": "file:///random_value.json"
+        },
+        {
+            "uri": "file:///access_offset_array.json"
+        },
+        {
+            "uri": "file:///get_strands_structure.json"
+        },
+        {
+            "uri": "file:///update_point_strand_index.json"
+        },
+        {
+            "uri": "file:///set_strand_color.json"
+        }
+    ],
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "User::Compounds::COG_Shape",
+            "uriImported": "file:///COG_Shape.json",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "10 261"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "offset"
+                                                },
+                                                {
+                                                    "metaName": "strands"
+                                                },
+                                                {
+                                                    "metaName": "colormin"
+                                                },
+                                                {
+                                                    "metaName": "colormax"
+                                                },
+                                                {
+                                                    "metaName": "shape"
+                                                },
+                                                {
+                                                    "metaName": "default_size"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1230 307"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "cog_shape"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,add"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Constants,float"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,User::Compounds,set_strand_color"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,matrix_to_SRT"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,User::Compounds,Loc_Shape"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "749.616 131.787 833.664 488.646"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-100.5 -106"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "cog_shape",
+                    "portDirection": "output",
+                    "portType": "Amino::Object"
+                },
+                {
+                    "portName": "offset",
+                    "portDirection": "input",
+                    "portType": "Math::float4x4",
+                    "portDefault": {
+                        "c0": {
+                            "x": "1f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c1": {
+                            "x": "0f",
+                            "y": "1f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c2": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "1f",
+                            "w": "0f"
+                        },
+                        "c3": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "1f"
+                        }
+                    }
+                },
+                {
+                    "portName": "strands",
+                    "portDirection": "input",
+                    "portType": "Amino::Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "colormin",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "10f",
+                        "y": "10f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "portName": "colormax",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "portName": "shape",
+                    "portDirection": "input",
+                    "portType": "Geometry::StrandShapes",
+                    "portDefault": "Ribbon"
+                },
+                {
+                    "portName": "default_size",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "0.00999999978f"
+                }
+            ],
+            "compounds": [
+                {
+                    "name": "cog_shape_01",
+                    "uriImported": "file:///COG_Shape.json",
+                    "metadata": [
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-450 -61"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "_0"
+                                                        },
+                                                        {
+                                                            "metaName": "_1"
+                                                        },
+                                                        {
+                                                            "metaName": "_2"
+                                                        },
+                                                        {
+                                                            "metaName": "_3"
+                                                        },
+                                                        {
+                                                            "metaName": "_4"
+                                                        },
+                                                        {
+                                                            "metaName": "_5"
+                                                        },
+                                                        {
+                                                            "metaName": "_6"
+                                                        },
+                                                        {
+                                                            "metaName": "_7"
+                                                        },
+                                                        {
+                                                            "metaName": "_8"
+                                                        },
+                                                        {
+                                                            "metaName": "_9"
+                                                        },
+                                                        {
+                                                            "metaName": "_10"
+                                                        },
+                                                        {
+                                                            "metaName": "_11"
+                                                        },
+                                                        {
+                                                            "metaName": "_12"
+                                                        },
+                                                        {
+                                                            "metaName": "_13"
+                                                        },
+                                                        {
+                                                            "metaName": "_14"
+                                                        },
+                                                        {
+                                                            "metaName": "_15"
+                                                        },
+                                                        {
+                                                            "metaName": "_16"
+                                                        },
+                                                        {
+                                                            "metaName": "_17"
+                                                        },
+                                                        {
+                                                            "metaName": "_18"
+                                                        },
+                                                        {
+                                                            "metaName": "_19"
+                                                        },
+                                                        {
+                                                            "metaName": "_20"
+                                                        },
+                                                        {
+                                                            "metaName": "_21"
+                                                        },
+                                                        {
+                                                            "metaName": "_22"
+                                                        },
+                                                        {
+                                                            "metaName": "_23"
+                                                        },
+                                                        {
+                                                            "metaName": "_24"
+                                                        },
+                                                        {
+                                                            "metaName": "_25"
+                                                        },
+                                                        {
+                                                            "metaName": "_26"
+                                                        },
+                                                        {
+                                                            "metaName": "_27"
+                                                        },
+                                                        {
+                                                            "metaName": "_28"
+                                                        },
+                                                        {
+                                                            "metaName": "_29"
+                                                        },
+                                                        {
+                                                            "metaName": "_30"
+                                                        },
+                                                        {
+                                                            "metaName": "_31"
+                                                        },
+                                                        {
+                                                            "metaName": "_32"
+                                                        },
+                                                        {
+                                                            "metaName": "_33"
+                                                        },
+                                                        {
+                                                            "metaName": "_34"
+                                                        },
+                                                        {
+                                                            "metaName": "_35"
+                                                        },
+                                                        {
+                                                            "metaName": "_36"
+                                                        },
+                                                        {
+                                                            "metaName": "_37"
+                                                        },
+                                                        {
+                                                            "metaName": "_38"
+                                                        },
+                                                        {
+                                                            "metaName": "_39"
+                                                        },
+                                                        {
+                                                            "metaName": "_40"
+                                                        },
+                                                        {
+                                                            "metaName": "_41"
+                                                        },
+                                                        {
+                                                            "metaName": "_42"
+                                                        },
+                                                        {
+                                                            "metaName": "_43"
+                                                        },
+                                                        {
+                                                            "metaName": "_44"
+                                                        },
+                                                        {
+                                                            "metaName": "_45"
+                                                        },
+                                                        {
+                                                            "metaName": "_46"
+                                                        },
+                                                        {
+                                                            "metaName": "_47"
+                                                        },
+                                                        {
+                                                            "metaName": "_48"
+                                                        },
+                                                        {
+                                                            "metaName": "_49"
+                                                        },
+                                                        {
+                                                            "metaName": "_50"
+                                                        },
+                                                        {
+                                                            "metaName": "_51"
+                                                        },
+                                                        {
+                                                            "metaName": "_52"
+                                                        },
+                                                        {
+                                                            "metaName": "_53"
+                                                        },
+                                                        {
+                                                            "metaName": "_54"
+                                                        },
+                                                        {
+                                                            "metaName": "_55"
+                                                        },
+                                                        {
+                                                            "metaName": "transform"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "845.894 20.3636"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "out_shape"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,User::Compounds,set_strand_color"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Modeling::Points,transform_points"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Math,matrix_to_SRT"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,User::Compounds,Loc_Shape"
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-173.471 -122.712 1071.87 587.328"
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "_0",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_1",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_2",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_3",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_4",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_5",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_6",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_7",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_8",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_9",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_10",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_11",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_12",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_13",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_14",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_15",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_16",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_17",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_18",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_19",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_20",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_21",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_22",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_23",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_24",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_25",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_26",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_27",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_28",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_29",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_30",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_31",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_32",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_33",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_34",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_35",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_36",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_37",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_38",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_39",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_40",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_41",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_42",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_43",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_44",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_45",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_46",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_47",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_48",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_49",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_50",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_51",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_52",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_53",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_54",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "_55",
+                            "portDirection": "input",
+                            "portType": "Math::float3"
+                        },
+                        {
+                            "portName": "out_shape",
+                            "portDirection": "output",
+                            "portType": "Amino::Object"
+                        },
+                        {
+                            "portName": "transform",
+                            "portDirection": "input"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "construct_strands",
+                            "nodeType": "Geometry::Strands::construct_strands",
+                            "fanInPortNames": {
+                                "point_position": [
+                                    "_0",
+                                    "_1",
+                                    "_2",
+                                    "_3",
+                                    "_4",
+                                    "_5",
+                                    "_6",
+                                    "_7",
+                                    "_8",
+                                    "_9",
+                                    "_10",
+                                    "_11",
+                                    "_12",
+                                    "_13",
+                                    "_14",
+                                    "_15",
+                                    "_16",
+                                    "_17",
+                                    "_18",
+                                    "_19",
+                                    "_20",
+                                    "_21",
+                                    "_22",
+                                    "_23",
+                                    "_24",
+                                    "_25",
+                                    "_26",
+                                    "_27",
+                                    "_28",
+                                    "_29",
+                                    "_30",
+                                    "_31",
+                                    "_32",
+                                    "_33",
+                                    "_34",
+                                    "_35",
+                                    "_36",
+                                    "_37",
+                                    "_38",
+                                    "_39",
+                                    "_40",
+                                    "_41",
+                                    "_42",
+                                    "_43",
+                                    "_44",
+                                    "_45",
+                                    "_46",
+                                    "_47",
+                                    "_48",
+                                    "_49",
+                                    "_50",
+                                    "_51",
+                                    "_52",
+                                    "_53",
+                                    "_54",
+                                    "_55"
+                                ]
+                            },
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-56.7835 -35.9243"
+                                },
+                                {
+                                    "metaName": "PortExpandedState",
+                                    "metadata": [
+                                        {
+                                            "metaName": "point_position",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "transform_points",
+                            "nodeType": "Modeling::Points::transform_points",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "192.149 19.7131"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": "._0",
+                            "target": "construct_strands.point_position._0"
+                        },
+                        {
+                            "source": "._1",
+                            "target": "construct_strands.point_position._1"
+                        },
+                        {
+                            "source": "._2",
+                            "target": "construct_strands.point_position._2"
+                        },
+                        {
+                            "source": "._3",
+                            "target": "construct_strands.point_position._3"
+                        },
+                        {
+                            "source": "._4",
+                            "target": "construct_strands.point_position._4"
+                        },
+                        {
+                            "source": "._5",
+                            "target": "construct_strands.point_position._5"
+                        },
+                        {
+                            "source": "._6",
+                            "target": "construct_strands.point_position._6"
+                        },
+                        {
+                            "source": "._7",
+                            "target": "construct_strands.point_position._7"
+                        },
+                        {
+                            "source": "._8",
+                            "target": "construct_strands.point_position._8"
+                        },
+                        {
+                            "source": "._9",
+                            "target": "construct_strands.point_position._9"
+                        },
+                        {
+                            "source": "._10",
+                            "target": "construct_strands.point_position._10"
+                        },
+                        {
+                            "source": "._11",
+                            "target": "construct_strands.point_position._11"
+                        },
+                        {
+                            "source": "._12",
+                            "target": "construct_strands.point_position._12"
+                        },
+                        {
+                            "source": "._13",
+                            "target": "construct_strands.point_position._13"
+                        },
+                        {
+                            "source": "._14",
+                            "target": "construct_strands.point_position._14"
+                        },
+                        {
+                            "source": "._15",
+                            "target": "construct_strands.point_position._15"
+                        },
+                        {
+                            "source": "._16",
+                            "target": "construct_strands.point_position._16"
+                        },
+                        {
+                            "source": "._17",
+                            "target": "construct_strands.point_position._17"
+                        },
+                        {
+                            "source": "._18",
+                            "target": "construct_strands.point_position._18"
+                        },
+                        {
+                            "source": "._19",
+                            "target": "construct_strands.point_position._19"
+                        },
+                        {
+                            "source": "._20",
+                            "target": "construct_strands.point_position._20"
+                        },
+                        {
+                            "source": "._21",
+                            "target": "construct_strands.point_position._21"
+                        },
+                        {
+                            "source": "._22",
+                            "target": "construct_strands.point_position._22"
+                        },
+                        {
+                            "source": "._23",
+                            "target": "construct_strands.point_position._23"
+                        },
+                        {
+                            "source": "._24",
+                            "target": "construct_strands.point_position._24"
+                        },
+                        {
+                            "source": "._25",
+                            "target": "construct_strands.point_position._25"
+                        },
+                        {
+                            "source": "._26",
+                            "target": "construct_strands.point_position._26"
+                        },
+                        {
+                            "source": "._27",
+                            "target": "construct_strands.point_position._27"
+                        },
+                        {
+                            "source": "._28",
+                            "target": "construct_strands.point_position._28"
+                        },
+                        {
+                            "source": "._29",
+                            "target": "construct_strands.point_position._29"
+                        },
+                        {
+                            "source": "._30",
+                            "target": "construct_strands.point_position._30"
+                        },
+                        {
+                            "source": "._31",
+                            "target": "construct_strands.point_position._31"
+                        },
+                        {
+                            "source": "._32",
+                            "target": "construct_strands.point_position._32"
+                        },
+                        {
+                            "source": "._33",
+                            "target": "construct_strands.point_position._33"
+                        },
+                        {
+                            "source": "._34",
+                            "target": "construct_strands.point_position._34"
+                        },
+                        {
+                            "source": "._35",
+                            "target": "construct_strands.point_position._35"
+                        },
+                        {
+                            "source": "._36",
+                            "target": "construct_strands.point_position._36"
+                        },
+                        {
+                            "source": "._37",
+                            "target": "construct_strands.point_position._37"
+                        },
+                        {
+                            "source": "._38",
+                            "target": "construct_strands.point_position._38"
+                        },
+                        {
+                            "source": "._39",
+                            "target": "construct_strands.point_position._39"
+                        },
+                        {
+                            "source": "._40",
+                            "target": "construct_strands.point_position._40"
+                        },
+                        {
+                            "source": "._41",
+                            "target": "construct_strands.point_position._41"
+                        },
+                        {
+                            "source": "._42",
+                            "target": "construct_strands.point_position._42"
+                        },
+                        {
+                            "source": "._43",
+                            "target": "construct_strands.point_position._43"
+                        },
+                        {
+                            "source": "._44",
+                            "target": "construct_strands.point_position._44"
+                        },
+                        {
+                            "source": "._45",
+                            "target": "construct_strands.point_position._45"
+                        },
+                        {
+                            "source": "._46",
+                            "target": "construct_strands.point_position._46"
+                        },
+                        {
+                            "source": "._47",
+                            "target": "construct_strands.point_position._47"
+                        },
+                        {
+                            "source": "._48",
+                            "target": "construct_strands.point_position._48"
+                        },
+                        {
+                            "source": "._49",
+                            "target": "construct_strands.point_position._49"
+                        },
+                        {
+                            "source": "._50",
+                            "target": "construct_strands.point_position._50"
+                        },
+                        {
+                            "source": "._51",
+                            "target": "construct_strands.point_position._51"
+                        },
+                        {
+                            "source": "._52",
+                            "target": "construct_strands.point_position._52"
+                        },
+                        {
+                            "source": "._53",
+                            "target": "construct_strands.point_position._53"
+                        },
+                        {
+                            "source": "._54",
+                            "target": "construct_strands.point_position._54"
+                        },
+                        {
+                            "source": "._55",
+                            "target": "construct_strands.point_position._55"
+                        },
+                        {
+                            "source": "construct_strands.strands",
+                            "target": "transform_points.points"
+                        },
+                        {
+                            "source": "transform_points.out_points",
+                            "target": ".out_shape"
+                        },
+                        {
+                            "source": ".transform",
+                            "target": "transform_points.transform"
+                        }
+                    ],
+                    "values": [],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "cog_shape_01",
+                    "nodeType": "cog_shape_01",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "620 114"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_strand_color",
+                    "nodeType": "User::Compounds::set_strand_color",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "925 287"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value",
+                    "valueType": "Math::float4x4",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "10 33"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "add",
+                    "nodeType": "Core::Math::add",
+                    "multiInPortNames": [
+                        "output1",
+                        "transform"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "315 9"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "set_strand_color.out_geometry",
+                    "target": ".cog_shape"
+                },
+                {
+                    "source": ".colormin",
+                    "target": "set_strand_color.colormin"
+                },
+                {
+                    "source": ".colormax",
+                    "target": "set_strand_color.colormax"
+                },
+                {
+                    "source": ".shape",
+                    "target": "set_strand_color.shape"
+                },
+                {
+                    "source": ".default_size",
+                    "target": "set_strand_color.default_size"
+                },
+                {
+                    "source": "cog_shape_01.out_shape",
+                    "target": "set_strand_color.strands"
+                },
+                {
+                    "source": "add.output",
+                    "target": "cog_shape_01.transform"
+                },
+                {
+                    "source": "value.output",
+                    "target": "add.first.output1"
+                },
+                {
+                    "source": ".offset",
+                    "target": "add.first.transform"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "cog_shape_01._0",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "3.17512989f",
+                        "y": "0f",
+                        "z": "2.04757995e-07f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._1",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "3.06416988f",
+                        "y": "0f",
+                        "z": "-0.82090199f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._2",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "2.74715996f",
+                        "y": "0f",
+                        "z": "-1.58623004f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._3",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "2.2451601f",
+                        "y": "0f",
+                        "z": "-2.2451601f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._4",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "1.58623004f",
+                        "y": "0f",
+                        "z": "-2.74714994f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._5",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0.820900977f",
+                        "y": "0f",
+                        "z": "-3.06416988f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._6",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "-3.1751101f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._7",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0.185151994f",
+                        "z": "-3.1751101f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._8",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0.820900977f",
+                        "y": "0.185151994f",
+                        "z": "-3.06416988f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._9",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "1.58623004f",
+                        "y": "0.185151994f",
+                        "z": "-2.74714994f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._10",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "2.2451601f",
+                        "y": "0.185151994f",
+                        "z": "-2.2451601f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._11",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "2.74715996f",
+                        "y": "0.185151994f",
+                        "z": "-1.58623004f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._12",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "3.06416988f",
+                        "y": "0.185151994f",
+                        "z": "-0.82090199f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._13",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "3.17512989f",
+                        "y": "0.185151994f",
+                        "z": "2.04757995e-07f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._14",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "3.17512989f",
+                        "y": "0f",
+                        "z": "2.04757995e-07f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._15",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "3.06416988f",
+                        "y": "0f",
+                        "z": "0.820900977f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._16",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "2.74715996f",
+                        "y": "0f",
+                        "z": "1.58623004f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._17",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "2.2451601f",
+                        "y": "0f",
+                        "z": "2.2451601f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._18",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "1.58623004f",
+                        "y": "0f",
+                        "z": "2.74715996f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._19",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0.820900977f",
+                        "y": "0f",
+                        "z": "3.06416988f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._20",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "3.17512989f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._21",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-0.820900977f",
+                        "y": "0f",
+                        "z": "3.06416988f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._22",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-1.58623004f",
+                        "y": "0f",
+                        "z": "2.74715996f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._23",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-2.2451601f",
+                        "y": "0f",
+                        "z": "2.2451601f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._24",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-2.74715996f",
+                        "y": "0f",
+                        "z": "1.58623004f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._25",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-3.06416988f",
+                        "y": "0f",
+                        "z": "0.820900977f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._26",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-3.17512989f",
+                        "y": "0f",
+                        "z": "2.04757995e-07f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._27",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-3.17512989f",
+                        "y": "0.185151994f",
+                        "z": "2.04757995e-07f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._28",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-3.06416988f",
+                        "y": "0.185151994f",
+                        "z": "-0.82090199f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._29",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-2.74715996f",
+                        "y": "0.185151994f",
+                        "z": "-1.58623004f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._30",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-2.2451601f",
+                        "y": "0.185151994f",
+                        "z": "-2.2451601f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._31",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-1.58623004f",
+                        "y": "0.185151994f",
+                        "z": "-2.74714994f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._32",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-0.820900977f",
+                        "y": "0.185151994f",
+                        "z": "-3.06416988f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._33",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0.185151994f",
+                        "z": "-3.1751101f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._34",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "-3.1751101f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._35",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-0.820900977f",
+                        "y": "0f",
+                        "z": "-3.06416988f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._36",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-1.58623004f",
+                        "y": "0f",
+                        "z": "-2.74714994f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._37",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-2.2451601f",
+                        "y": "0f",
+                        "z": "-2.2451601f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._38",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-2.74715996f",
+                        "y": "0f",
+                        "z": "-1.58623004f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._39",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-3.06416988f",
+                        "y": "0f",
+                        "z": "-0.82090199f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._40",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-3.17512989f",
+                        "y": "0f",
+                        "z": "2.04757995e-07f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._41",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-3.17512989f",
+                        "y": "0.185151994f",
+                        "z": "2.04757995e-07f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._42",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-3.06416988f",
+                        "y": "0.185151994f",
+                        "z": "0.820900977f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._43",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-2.74715996f",
+                        "y": "0.185151994f",
+                        "z": "1.58623004f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._44",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-2.2451601f",
+                        "y": "0.185151994f",
+                        "z": "2.2451601f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._45",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-1.58623004f",
+                        "y": "0.185151994f",
+                        "z": "2.74715996f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._46",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-0.820900977f",
+                        "y": "0.185151994f",
+                        "z": "3.06416988f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._47",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0.185151994f",
+                        "z": "3.17512989f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._48",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "3.17512989f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._49",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0.185151994f",
+                        "z": "3.17512989f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._50",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0.820900977f",
+                        "y": "0.185151994f",
+                        "z": "3.06416988f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._51",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "1.58623004f",
+                        "y": "0.185151994f",
+                        "z": "2.74715996f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._52",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "2.2451601f",
+                        "y": "0.185151994f",
+                        "z": "2.2451601f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._53",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "2.74715996f",
+                        "y": "0.185151994f",
+                        "z": "1.58623004f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._54",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "3.06416988f",
+                        "y": "0.185151994f",
+                        "z": "0.820900977f"
+                    }
+                },
+                {
+                    "valueName": "cog_shape_01._55",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "3.17512989f",
+                        "y": "0.185151994f",
+                        "z": "2.04757995e-07f"
+                    }
+                },
+                {
+                    "valueName": "value.value",
+                    "valueType": "Math::float4x4",
+                    "value": {
+                        "c0": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c1": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c2": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c3": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "0f"
+                        }
+                    }
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}
