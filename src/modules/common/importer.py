@@ -17,6 +17,6 @@ print('Imported Controllers')
 from ..transforms import transform
 print('Imported transform')
 
-from src.modules.frostRig import Rig_Global
+from ..frostRig import Rig_Global
 print('Imported Rig_Global')
 

@@ -31,4 +31,21 @@ class tf_class(object):
             pass
         return trf
 
-    
+    def add_data_attr(self,Trname = None,Data = ''):
+        if Trname!=None:
+            pass
+        else:
+            raise RuntimeError('Transform not given or not an applicable obj')
+
+        trf = pm.PyNode('Trname')
+        try:
+            dataAtr = pm.addAttr(trf,dt = 'string',ln = 'data')
+            trf.data.set(Data)
+        except:
+            try:
+                trf.data.set(Data)
+            except:
+                raise RuntimeError('Failed to add/set Data Attribute')
+
+            
+

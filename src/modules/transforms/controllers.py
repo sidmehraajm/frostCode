@@ -4,7 +4,7 @@ import pymel.core as pm
 
 class control(object):
         
-    def create_bfr_control(self,bfnode = None,shape_array ='circle_shape',Ctlname = 'temp',color = 'rand', pos = None,parent = None,ctrl_volume=.03,inheritTransform = 1):
+    def create_bfr_control(self,bfnode = None,shape_array ='circle_shape',Ctlname = 'temp',color = 'rand', pos = None,parent = None,ctrl_volume=.03,inheritTransform = 1,shape_scale = 1):
         """
         Bifrost Constraint 
         Args:
@@ -78,7 +78,7 @@ class control(object):
             else:
                 raise RuntimeError(str(bfnode) +'bf graph not found')
         
-        print (bifrost_control_shape)
+        
         shape_compund = pm.vnnCompound(str(bifrost_control_shape),'/',an =  'BifrostGraph,User::Compounds,%s'%shape_array)[0]
         Out_ctrls = pm.vnnNode(str(bifrost_control_shape), "/", listPorts=True)
         ctrl_Names = []
@@ -112,13 +112,16 @@ class control(object):
                     }
         if color in color_dict:
             shape_color = color_dict[color]
-            print(color_dict[color])
+            
         else:
             shape_color = rand_color
-            print(shape_color)
+            
         pm.vnnNode(str(bifrost_control_shape),'/%s'%shape_compund,setPortDefaultValues = ('colormin','{%s,%s,%s}'%(shape_color[0],shape_color[1],shape_color[2])))
         pm.vnnNode(str(bifrost_control_shape),'/%s'%shape_compund,setPortDefaultValues = ('colormax','{%s,%s,%s}'%(shape_color[0],shape_color[1],shape_color[2])))
         pm.vnnNode(str(bifrost_control_shape),'/%s'%shape_compund,setPortDefaultValues = ('default_size','%s'%ctrl_volume))
+        pm.vnnNode(str(bifrost_control_shape),'/%s'%shape_compund,setPortDefaultValues = ('offset','{%s, 0, 0, 0, 0, %s, 0, 0, 0, 0, %s, 0, 0, 0, 0, 1}'%(shape_scale,shape_scale,shape_scale)))
+
+
         ctlPyNode = pm.PyNode(Ctlname)
         if pos:
             
@@ -138,6 +141,8 @@ class control(object):
         
         ctlPyNode.inheritsTransform.set(inheritTransform)
 
+
+
         return (Ctlname)
 
 
@@ -149,7 +154,7 @@ class control(object):
                     in a seperate graph else it will create in it's own graph: single transform: |||Needs a bifrost graph node|||
   
 
-            guideName: Only the name and side Name of the control, '_ctrl will be added automatically'
+            guideName: Only the name and side Name of the control, '_gd will be added automatically'
 
             pos: A matrix can be given if the control has to be placed at  specific position it will be set from offsetParentMatrix, A matrix should be a pyMel matrix, else it can cause erros
 
@@ -174,7 +179,7 @@ class control(object):
         """
 
         shape_array ='Loc_Shape'
-        guideName = guideName+'_ctrl_0'
+        guideName = guideName+'_gd_0'
         if bfnode==None:
             
             if pm.objExists('ControlBase_bfGraph'):
@@ -192,7 +197,7 @@ class control(object):
             else:
                 raise RuntimeError(str(bfnode) +'bf graph not found')
         
-        print (bifrost_control_shape)
+        
         shape_compund = pm.vnnCompound(str(bifrost_control_shape),'/',an =  'BifrostGraph,User::Compounds,%s'%shape_array)[0]
         Out_ctrls = pm.vnnNode(str(bifrost_control_shape), "/", listPorts=True)
         ctrl_Names = []
