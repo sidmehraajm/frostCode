@@ -2,6 +2,8 @@
 import pymel.core as pm 
 from ..transforms import transform
 from ..transforms import controllers
+from ..common import networks
+
 tn = transform.tf_class()
 ctl = controllers.control()
 class globals(object):
@@ -12,7 +14,7 @@ class globals(object):
         Global Hi setup
         Args:
             assetName: Name of the asset :String Data 
-            modName: name of the base parent group
+            modName: name of the base parent group/module name
 
         Returns:
             Global group 
@@ -25,15 +27,35 @@ class globals(object):
             var.global_Hi('Test Asset') 
         """
         #creating main network Nodes
+        if modName !='':
+            pass
+        else:
+            raise RuntimeError('Mod name not given')
+
 
 
 
         #creating main global groups
         rig_global_grp = tn.create_transform(Trname='%s'%modName,Data = assetName)
-        rig_guide_grp = tn.create_transform(Trname='guides',Data = assetName+'_guides')
-        rig_controls_grp = tn.create_transform(Trname='controls',Data = assetName+'_controls')
-        rig_skeleton_grp = tn.create_transform(Trname='skeleton',Data = assetName+'_skeleton')
-        rig_misc_grp = tn.create_transform(Trname='misc',Data = assetName+'_misc')
+        rig_guide_grp = tn.create_transform(Trname='%s_guides'%modName,Data = assetName+'_guides')
+        rig_controls_grp = tn.create_transform(Trname='%s_controls'%modName,Data = assetName+'_controls')
+        rig_skeleton_grp = tn.create_transform(Trname='%s_skeleton'%modName,Data = assetName+'_skeleton')
+        rig_misc_grp = tn.create_transform(Trname='%s_misc'%modName,Data = assetName+'_misc')
+
+        #add message attrs for network
+        tn.add_network_attr(rig_global_grp,'%s_input_network'%modName)
+        tn.add_network_attr(rig_global_grp,'%s_output_network'%modName)
+
+        tn.add_network_attr(rig_guide_grp,'%s_guide_output_network'%modName)
+        tn.add_network_attr(rig_guide_grp,'%s_guide_input_network'%modName)
+
+        tn.add_network_attr(rig_controls_grp,'%s_control_output_network'%modName)
+        tn.add_network_attr(rig_controls_grp,'%s_control_input_network'%modName)        
+
+
+        tn.add_network_attr(rig_skeleton_grp,'%s_skeleton_output_network'%modName)
+        tn.add_network_attr(rig_skeleton_grp,'%s_skeleton_input_network'%modName)     
+           
 
         pm.parent([rig_guide_grp,rig_controls_grp,rig_skeleton_grp,rig_misc_grp],rig_global_grp)
         return [rig_global_grp,rig_guide_grp,rig_controls_grp,rig_skeleton_grp,rig_misc_grp]
