@@ -6,6 +6,7 @@ from ..common import networks
 
 tn = transform.tf_class()
 ctl = controllers.control()
+ntw = networks.networker()
 class globals(object):
     
     def base_Hi(self,assetName,modName=''):
@@ -52,9 +53,12 @@ class globals(object):
         tn.add_network_attr(rig_controls_grp,'%s_control_output_network'%modName)
         tn.add_network_attr(rig_controls_grp,'%s_control_input_network'%modName)        
 
-
         tn.add_network_attr(rig_skeleton_grp,'%s_skeleton_output_network'%modName)
         tn.add_network_attr(rig_skeleton_grp,'%s_skeleton_input_network'%modName)     
+
+        tn.add_network_attr(rig_misc_grp,'%s_misc_output_network'%modName)
+        tn.add_network_attr(rig_misc_grp,'%s_misc_input_network'%modName)     
+           
            
 
         pm.parent([rig_guide_grp,rig_controls_grp,rig_skeleton_grp,rig_misc_grp],rig_global_grp)
@@ -65,17 +69,24 @@ class globals(object):
             raise RuntimeError('Not enough args provided')
         
         rig_global_grp=globalGrps[0]
+        modName = rig_global_grp
+
+
         rig_guide_grp=globalGrps[1]
         rig_controls_grp=globalGrps[2]
         rig_skeleton_grp=globalGrps[3]
         rig_misc_grp=globalGrps[4]
 
+        
         #creating global guides
         world_base_gd = pm.PyNode(ctl.create_bfr_guide(guideName='world_base',parent=rig_guide_grp))
         world_01_gd = pm.PyNode(ctl.create_bfr_guide(guideName='world_01',parent=rig_guide_grp))
         world_02_gd = pm.PyNode(ctl.create_bfr_guide(guideName='world_02',parent=rig_guide_grp))
         cog_01_gd = pm.PyNode(ctl.create_bfr_guide(guideName='cog_01',parent=rig_guide_grp))
         setting_01_gd = pm.PyNode(ctl.create_bfr_guide(guideName='setting_01',parent=rig_guide_grp))
+        
+        guide_list = [world_base_gd,world_01_gd,world_02_gd,cog_01_gd,setting_01_gd]
+
 
         #creating global controls
         World_01_ctrl = pm.PyNode(ctl.create_bfr_control(shape_array = 'Global_shape',Ctlname = 'World_01',color='Yellow',parent = rig_controls_grp,ctrl_volume=.05))
@@ -83,6 +94,37 @@ class globals(object):
         COG_ctrl = pm.PyNode(ctl.create_bfr_control(shape_array = 'COG_Shape',Ctlname = 'COG',color='Yellow',parent = rig_controls_grp,ctrl_volume=.03))
         setting_ctrl = pm.PyNode(ctl.create_bfr_control(shape_array = 'setting_shape',Ctlname = 'Setting',color='Teal',parent = rig_controls_grp,ctrl_volume=.03,shape_scale=.5))
             
+        #TODO create skeleton
+
+
+        #getting output and input network nodes
+        rig_mod_input_ntw = ntw.find_input_network(modName)
+        rig_mod_output_ntw = ntw.find_output_network(modName)
+
+        rig_guide_input_ntw = ntw.find_input_network(modName,sub_module = 'guides')
+        rig_guide_output_ntw = ntw.find_output_network(modName,sub_module = 'guides')
+        
+        rig_controls_input_ntw = ntw.find_input_network(modName,sub_module = 'guides')
+        rig_controls_output_ntw = ntw.find_output_network(modName,sub_module = 'guides')
+
+        rig_skeleton_input_ntw = ntw.find_input_network(modName,sub_module = 'guides')
+        rig_skeleton_output_ntw = ntw.find_output_network(modName,sub_module = 'guides')
+
+        rig_misc_input_ntw = ntw.find_input_network(modName,sub_module = 'guides')
+        rig_misc_output_ntw = ntw.find_output_network(modName,sub_module = 'guides')
+
+
+        #create matrix attrs on network nodes, guides
+        for i in guide_list:
+            tn.add_matrix_attr(rig_guide_output_ntw,atrName='%s_worldMatrix'%i)
+            pm.connectAttr(i+'.worldMatrix[0]',rig_guide_output_ntw+'.%s_worldMatrix'%i)
+
+
+
+
+
+
+
 
         #matrix_setup_guides
         world_base_gd.worldMatrix[0]>>world_01_gd.offsetParentMatrix

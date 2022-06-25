@@ -62,3 +62,18 @@ class tf_class(object):
         trf = pm.PyNode(Trname)
         
         dataAtr = pm.addAttr(trf,at = 'message',ln = '%s'%atrName)
+    def add_matrix_attr(self,Trname = None,atrName = None):
+        if Trname!=None:
+            pass
+        else:
+            raise RuntimeError('Transform not given or not an applicable obj')
+
+        if atrName!=None:
+            pass
+        else:
+            raise RuntimeError('Attribute name not given')
+            
+
+        trf = pm.PyNode(Trname)
+        
+        dataAtr = pm.addAttr(trf,dt = 'matrix',ln = '%s'%atrName)
