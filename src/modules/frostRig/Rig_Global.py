@@ -104,27 +104,20 @@ class globals(object):
         rig_guide_input_ntw = ntw.find_input_network(modName,sub_module = 'guides')
         rig_guide_output_ntw = ntw.find_output_network(modName,sub_module = 'guides')
         
-        rig_controls_input_ntw = ntw.find_input_network(modName,sub_module = 'guides')
-        rig_controls_output_ntw = ntw.find_output_network(modName,sub_module = 'guides')
+        rig_controls_input_ntw = ntw.find_input_network(modName,sub_module = 'controls')
+        rig_controls_output_ntw = ntw.find_output_network(modName,sub_module = 'controls')
 
-        rig_skeleton_input_ntw = ntw.find_input_network(modName,sub_module = 'guides')
-        rig_skeleton_output_ntw = ntw.find_output_network(modName,sub_module = 'guides')
+        rig_skeleton_input_ntw = ntw.find_input_network(modName,sub_module = 'skeleton')
+        rig_skeleton_output_ntw = ntw.find_output_network(modName,sub_module = 'skeleton')
 
-        rig_misc_input_ntw = ntw.find_input_network(modName,sub_module = 'guides')
-        rig_misc_output_ntw = ntw.find_output_network(modName,sub_module = 'guides')
+        rig_misc_input_ntw = ntw.find_input_network(modName,sub_module = 'misc')
+        rig_misc_output_ntw = ntw.find_output_network(modName,sub_module = 'misc')
 
 
         #create matrix attrs on network nodes, guides
         for i in guide_list:
-            tn.add_matrix_attr(rig_guide_output_ntw,atrName='%s_worldMatrix'%i)
-            pm.connectAttr(i+'.worldMatrix[0]',rig_guide_output_ntw+'.%s_worldMatrix'%i)
-
-
-
-
-
-
-
+            ntw.add_world_mtxs_to_output(rig_guide_output_ntw,i)
+        ntw.match_network_attrs(rig_guide_output_ntw,rig_controls_input_ntw)
 
         #matrix_setup_guides
         world_base_gd.worldMatrix[0]>>world_01_gd.offsetParentMatrix
@@ -138,20 +131,21 @@ class globals(object):
         w2_to_cog_mltMtx = pm.createNode('multMatrix',n = 'world_02_to_COG')
         cog_to_setting_mltMtx = pm.createNode('multMatrix',n = 'COG_to_setting')
 
-        world_01_gd.worldMatrix[0]>>World_01_ctrl.offsetParentMatrix
-
-        world_02_gd.worldMatrix[0]>>w1_to_w2_mltMtx.matrixIn[0]
-        world_01_gd.worldInverseMatrix[0]>>w1_to_w2_mltMtx.matrixIn[1]
+        pm.connectAttr('%s.%s_worldMatrix'%(rig_controls_input_ntw,world_01_gd),World_01_ctrl+'.offsetParentMatrix')
+        pm.connectAttr('%s.%s_worldMatrix'%(rig_controls_input_ntw,world_02_gd),w1_to_w2_mltMtx+'.matrixIn[0]')
+        pm.connectAttr('%s.%s_worldInverseMatrix'%(rig_controls_input_ntw,world_01_gd),w1_to_w2_mltMtx+'.matrixIn[1]')      
+        
         World_01_ctrl.worldMatrix[0]>>w1_to_w2_mltMtx.matrixIn[2]
         w1_to_w2_mltMtx.matrixSum>>World_02_ctrl.offsetParentMatrix
 
-        cog_01_gd.worldMatrix[0]>>w2_to_cog_mltMtx.matrixIn[0]
-        world_02_gd.worldInverseMatrix[0]>>w2_to_cog_mltMtx.matrixIn[1]
+        pm.connectAttr('%s.%s_worldMatrix'%(rig_controls_input_ntw,cog_01_gd),w2_to_cog_mltMtx+'.matrixIn[0]')
+        pm.connectAttr('%s.%s_worldInverseMatrix'%(rig_controls_input_ntw,world_02_gd),w2_to_cog_mltMtx+'.matrixIn[1]')
         World_02_ctrl.worldMatrix[0]>>w2_to_cog_mltMtx.matrixIn[2]
         w2_to_cog_mltMtx.matrixSum>>COG_ctrl.offsetParentMatrix
 
-        setting_01_gd.worldMatrix[0]>>cog_to_setting_mltMtx.matrixIn[0]
-        cog_01_gd.worldInverseMatrix[0]>>cog_to_setting_mltMtx.matrixIn[1]
+        pm.connectAttr('%s.%s_worldMatrix'%(rig_controls_input_ntw,setting_01_gd),cog_to_setting_mltMtx+'.matrixIn[0]')
+        pm.connectAttr('%s.%s_worldInverseMatrix'%(rig_controls_input_ntw,cog_01_gd),cog_to_setting_mltMtx+'.matrixIn[1]')
+
         COG_ctrl.worldMatrix[0]>>cog_to_setting_mltMtx.matrixIn[2]
         cog_to_setting_mltMtx.matrixSum>>setting_ctrl.offsetParentMatrix
 

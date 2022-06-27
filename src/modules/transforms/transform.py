@@ -77,3 +77,5 @@ class tf_class(object):
         trf = pm.PyNode(Trname)
         
         dataAtr = pm.addAttr(trf,dt = 'matrix',ln = '%s'%atrName)
+
+    
