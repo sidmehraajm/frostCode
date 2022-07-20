@@ -93,8 +93,9 @@ class globals(object):
         World_02_ctrl = pm.PyNode(ctl.create_bfr_control(shape_array = 'fat_cross_shape',Ctlname = 'World_02',color='Teal',parent = rig_controls_grp,ctrl_volume=.03,shape_scale=.7))
         COG_ctrl = pm.PyNode(ctl.create_bfr_control(shape_array = 'COG_Shape',Ctlname = 'COG',color='Yellow',parent = rig_controls_grp,ctrl_volume=.03))
         setting_ctrl = pm.PyNode(ctl.create_bfr_control(shape_array = 'setting_shape',Ctlname = 'Setting',color='Teal',parent = rig_controls_grp,ctrl_volume=.03,shape_scale=.5))
-            
-        #TODO create skeleton
+
+        ctrl_list=[World_01_ctrl,World_02_ctrl,COG_ctrl,setting_ctrl]       
+
 
 
         #getting output and input network nodes
@@ -118,6 +119,26 @@ class globals(object):
         for i in guide_list:
             ntw.add_world_mtxs_to_output(rig_guide_output_ntw,i)
         ntw.match_network_attrs(rig_guide_output_ntw,rig_controls_input_ntw)
+        
+        #create matrix attrs on network nodes, control output
+        for i in ctrl_list:
+            ntw.add_world_mtxs_to_output(rig_controls_output_ntw,i)
+        ntw.match_network_attrs(rig_controls_output_ntw,rig_skeleton_input_ntw)
+
+        #createing skeleton
+        pt = rig_skeleton_grp# giving first parent which will be replaced automatically 
+        for i in ctrl_list:
+            jnt = tn.create_transform(Trname='%s'%i,typ = 'joint',parent=pt,inheritTransform=0)
+            pt = jnt
+            #i.worldMatrix[0]>>jnt.offsetParentMatrix
+            pm.connectAttr('%s.%s_worldMatrix'%(rig_skeleton_input_ntw,i),jnt+'.offsetParentMatrix')
+
+
+
+
+
+
+
 
         #matrix_setup_guides
         world_base_gd.worldMatrix[0]>>world_01_gd.offsetParentMatrix
@@ -148,7 +169,6 @@ class globals(object):
 
         COG_ctrl.worldMatrix[0]>>cog_to_setting_mltMtx.matrixIn[2]
         cog_to_setting_mltMtx.matrixSum>>setting_ctrl.offsetParentMatrix
-
 
 
 

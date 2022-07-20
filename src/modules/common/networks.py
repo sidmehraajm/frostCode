@@ -22,8 +22,8 @@ class networker(object):
         skeleton_input_network = pm.createNode('network',name = '%s_skeleton_input_network'%modName)
         skeleton_output_network = pm.createNode('network',name = '%s_skeleton_output_network'%modName)                    
 
-        misc_input_network = pm.createNode('network',name = '%s_skeleton_input_network'%modName)
-        misc_output_network = pm.createNode('network',name = '%s_skeleton_output_network'%modName)                    
+        misc_input_network = pm.createNode('network',name = '%s_misc_input_network'%modName)
+        misc_output_network = pm.createNode('network',name = '%s_misc_output_network'%modName)                    
 
         tn.add_network_attr(global_input_network,'%s_input_network'%modName)
         tn.add_network_attr(global_output_network,'%s_output_network'%modName)
@@ -134,7 +134,6 @@ class networker(object):
         pm.connectAttr(object+'.worldInverseMatrix[0]',output_ntw+'.%s_worldInverseMatrix'%object)
 
     def match_network_attrs(self,ntw_from='',ntw_to=''):
-        #TODO add connect to already exsisting attrs
         if ntw_from !='':
             pass
         else:
@@ -156,7 +155,9 @@ class networker(object):
 
             if at_type == 'matrix':
                 if i in Out_Attributes:
-                    pass
+                    try:pm.connectAttr(ntw_from+'.%s'%i,ntw_to+'.%s'%i)
+                    except:pass
+                    
                 else:
                     tn.add_matrix_attr(ntw_to,atrName=i)
                     pm.connectAttr(ntw_from+'.%s'%i,ntw_to+'.%s'%i)
